@@ -1,0 +1,19 @@
+@risk-color: #000325;
+@left-width: 20%;
+@ab-left: calc(@left-width + 20px);
+@right-width: calc(100% - @left-width - 20px);
+
+.modal-box .ant-modal-wrap .ant-modal .ant-modal-content{
+  background-color: @risk-color;
+}
+
+.layout.ant-layout.ant-layout-has-sider .data3d-ab-container .data3d_menu{
+  left: @ab-left;
+  width: @right-width
+}
+.layout.ant-layout.ant-layout-has-sider .data3d-ab-container .interest-card-group{
+  left: @ab-left;
+}
+.layout.ant-layout.ant-layout-has-sider .data3d-ab-container .trigger-box{
+  left: @left-width;
+}

@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "36785",
+      "name": "电梯",
+      "font_class": "dianti",
+      "unicode": "f008d",
+      "unicode_decimal": 983181
+    },
+    {
+      "icon_id": "1836740",
+      "name": "信息",
+      "font_class": "message",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "5311962",
+      "name": "定位",
+      "font_class": "target-lock",
+      "unicode": "e755",
+      "unicode_decimal": 59221
+    }
+  ]
+}
