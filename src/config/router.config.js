@@ -42,12 +42,23 @@ export const asyncRouterMap = [
     component: BlankLayout,
     meta: { title: '数据中心' },
     children: [
+      // 下方注释的是真正的crop主菜单路由
+      // {
+      //   path: '/ci/corp',
+      //   name: 'corp',
+      //   meta: { title: '数据中心' },
+      //   component: () => import('@/views/ci/corp')
+      // },
+
+      //这里是重定向到AI教育页面
       {
         path: '/ci/corp',
         name: 'corp',
         meta: { title: '数据中心' },
-        component: () => import('@/views/ci/corp')
+        component: () => import('@/views/xadmin/content/WorkFace/sceneType/aiEducation')
       },
+
+
       {
         path: '/ci/iframeTest',
         name: 'iframeTest',

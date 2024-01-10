@@ -1,87 +1,225 @@
 <template>
-  <div class="x-item">
-    <div class="x-item" v-if='status'>
-      <div style='margin-left: 50%;font-size: 30px'>
+  <div class="x-item" style="margin-top: 3%;font-family: Times New Roman !important">
+  
+    <div class="x-item" v-if='status' style="">
+      <div style='margin-left: 40%;font-size: 20px'>
         <div>
           <a-popover placement="rightTop" >
-            <div class='text' style='font-weight: 500;font-size: 50px'>静夜思</div>
-            <template #content>
-              <div style='width: 500px;color: #1C9FA3;font-size: 35px'>Текст подсказки; Обратите внимание, что, когда мышь фокусируется на ключевом тексте, дается соответствующий профиль этого текста (например: изображение, видео, а также текст и т. Д.)</div>
-            </template>
+            <div class='text' style="font-weight: 600;" >Сергей Иоффе</div>
             <template #title>
-              <span style='width: 500px;color: #1C9FA3;font-size: 35px'>Введение</span>
-            </template>
-          </a-popover>
-        </div>
-        <div>
-          <a-popover placement="rightTop" >
-            <h1>（唐）李白</h1>
-            <template #title>
-              <div style='font-size: 35px;color: black'>李白简介</div>
+              <img style="width:500px;height: 300px;" src="../../../../../assets/aiImages/Портрет автора.jpeg">
             </template>
             <template #content>
-              <div style='width: 500px;display: flex'>
-                <div>
-                  <img src="../../../../../assets/images/iot/moudelImg/miner.png">
-                </div>
-                <div>
+              <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
+                <div style=" text-align: justify;">
                   <a-descriptions title="User Info">
-                    <a-descriptions-item label="UserName">李白（701－762），字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”。汉族，祖籍陇西成纪，出生于碎叶城（当时属唐朝领土，今属吉尔吉斯斯坦），4岁再随父迁至剑南道绵州。李白存世诗文千余篇，有《李太白集》传世。762年病逝，享年61岁。其墓在今安徽当涂，四川江油、湖北安陆有纪念馆。李白生活在盛唐时期，二十五岁时只身出蜀，开始了广泛漫游生活，南到洞庭湘江，东至吴、越，寓居在安陆、应山。直到天宝元年（742），因道士吴筠的推荐，李白被召至长安，供奉翰林，后因不能见容于权贵，在京仅两年半，就赐金放还而去，然后飘荡四方的漫游生活。李白和杜甫并称“李杜”。他的诗歌既反映</a-descriptions-item>
+                    <a-descriptions-item label="UserName" >Иоффе Сергей Айзикович (1935, г. Смоленск - 1992, г. Иркутск) - поэт, прозаик. Детство С.А. Иоффе прошло в посёлках довоенного БАМа (Байкало-Амурская магистраль), строителем которого был его отец. Школу и педагогический институт окончил в Иркутске. Он работал на студии телевидения, в газете «Советская молодежь», на студии кинохроники, преподавал в университете. С ранних лет печатался в иркутских газетах и журналах. Автор поэтических сборников, эссе о русских поэтах. В последние годы жизни С.А. Иоффе работал в жанре прозы (повести «Был человек», «Северные поезда», «Любит, не любит...».</a-descriptions-item>
                   </a-descriptions>
                 </div>
               </div>
-              <video controls="controls" src="../../../../../assets/images/iot/video.mp4" style="width:99%;height:266px;"></video>
-              <p>Content</p>
             </template>
           </a-popover>
+        </div>
+        <!-- 第一段 -->
+        <div>
+            <div>Проника́ю несу́етным взгля́дом</div>
+        </div>
+        <div>
+            <div>в тот Ирку́тск, где не бу́дет меня́...</div>
         </div>
         <div>
           <a-popover placement="rightTop" >
-            <div>床前明月光，</div>
-            <template #content>
-              <p>Content</p>
-              <p>Content</p>
-            </template>
+          <a-tooltip color="green" placement="topLeft">
+            <span class='text'>С нестаре́ющей це́рковью ря́дом<br/>пробега́ют трамва́и,звеня́. </span>
+          </a-tooltip>
             <template #title>
-              <span>Title</span>
+              <video controls="controls" src="../../../../../assets/aiImages/first.mp4" style="width:99%;height:266px;" ></video>
+            </template>
+          </a-popover>
+        </div>
+        <!-- 第二段 -->
+        <br/>
+        <div>
+          А над ней, в поднебе́сье взмыва́я,
+        </div>
+        <div>
+          как в былы́е, мои́, времена́,
+        </div>
+        <div>мельтеши́т 
+
+          <a-popover placement="rightTop" >
+          <a-tooltip color="green" placement="topLeft">
+            <span class='text'>голуби́ная ста́я –</span>
+          </a-tooltip>
+            <template #title>
+              <video controls="controls" src="../../../../../assets/aiImages/second.mp4" style="width:99%;height:266px;" ></video>
+            </template>
+          </a-popover>
+
+        </div>
+        <div>
+          сла́ва бо́гу, сыта́ и вольна́.
+        </div>
+        <!-- 第三段 -->
+        <br/>
+        <div>
+          Поверну́-ка незри́мо у ры́нка,
+        </div>
+        <div>
+          отдохну́ на подъёме круто́м.
+        </div>
+        <div>Пре́жде зва́ли –
+          <a-popover placement="right" >
+            <span class='text'> Иерусалимка,</span>
+            <template #content>
+              <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
+                <div style=" text-align: justify;">
+                  <a-descriptions title="User Info">
+                    <a-descriptions-item label="UserName" >
+                      Иерусалимка – холм, расположенный в самом центре Иркутска. На холме возвышается Входо-Иерусалимская церковь (Храм Входа Господня в Иерусалим). С 1772 года здесь располагалось одно из старейших и наиболее крупных кладбищ Иркутска – Иерусалимское кладбище, которое В 1932 году 7 апреля властями Иркутска было принято решение о закрытии кладбища и переоборудовании его под парк культуры и отдыха. Сейчас это место представляет собой историко-мемориальный комплекс «Иерусалимская гора».
+                    </a-descriptions-item>
+                  </a-descriptions>
+                </div>
+              </div>
+            </template>
+          </a-popover>
+        </div>
+        
+        <div>
+          <a-popover placement="left" >
+            <span class='text'> Парк культу́ры </span>
+            <template #content>
+              <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
+                <div>
+                  <img style="width:500px;height: 300px;" src="../../../../../assets/aiImages/second.png">
+                </div>
+              </div>
+            </template>
+          </a-popover>
+          – назва́ли пото́м.
+        </div>
+<!-- 第四段 -->
+<br/>
+        <div>
+          Нет в окру́ге удо́бнее го́рок:
+          
+        </div>
+        <div>
+          безмяте́жность, просто́р, высота́.
+        </div>
+        <div>
+          Открыва́ется прожи́тый го́род
+        </div>
+        <div>
+          целико́м – от моста́ до моста́. 
+        </div>
+
+<!-- 第五段 -->
+<br/>
+        <div>
+          Предуга́дываю переме́ны:
+        </div>
+        <div>
+          подросли́ де́рева и дома́,
+        </div>
+        <div>
+          но душа́, сердцеви́на – нетле́нны,
+        </div>
+        <div>
+          как нетле́нна приро́да сама́.
+        </div>
+
+<!-- 第六段 -->
+<br/>
+        <div>
+          То́лько я бы едва́ ли отве́тил,
+        </div>
+        <div>
+          в чём она́, городска́я душа́.
+        </div>
+        <div>
+          <a-popover placement="leftTop" >
+          <a-tooltip color="green" placement="topLeft">
+            <span class='text'>Э́тот звон,</span>
+          </a-tooltip>
+            <template #title>
+              <audio controls="controls" src="../../../../../assets/aiImages/third.mp3" ></audio>
+            </template>
+          </a-popover>
+          <span>переме́нчивый ве́тер,</span>
+        </div>
+        <div>
+          <span>что балу́ет,</span>
+
+          <a-popover placement="rightTop" >
+          <a-tooltip color="green" placement="topLeft">
+            <span class='text'> листву́ вороша́,</span>
+          </a-tooltip>
+            <template #title>
+              <video controls="controls" src="../../../../../assets/aiImages/third.mp4" style="width:99%;height:266px;" ></video>
+            </template>
+          </a-popover>
+        </div>
+
+<!-- 第七段 -->
+<br/>
+        <div>
+          <a-popover placement="left" >
+            <span class='text'> купола́, предзака́тное со́лнце, </span>
+            <template #content>
+              <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
+                <div>
+                  <img style="width:500px;height: 300px;" src="../../../../../assets/aiImages/third.jpg">
+                </div>
+              </div>
             </template>
           </a-popover>
         </div>
         <div>
-          <a-tooltip color="green" placement="topLeft">
-            <template #title>
-              <span>Или так.</span>
-            </template>
-            <div>疑是地上霜</div>
-          </a-tooltip>
-        </div>
-        <div>
-          <a-tooltip color="green" placement="topLeft">
-            <template #title>
-              <span>可以是文字提升类型的框框</span>
-            </template>
-            <div>举头望明月</div>
-          </a-tooltip>
-        </div>
-        <div>
-          <a-tooltip color="green" placement="topLeft">
-            <template #title>
-              <span>低头思故乡</span>
-            </template>
-            <span class='text'>低头</span>
-          </a-tooltip>
-          <a-tooltip color="green" placement="topLeft">
-            <template #title>
-              <span>Или в таком стиле.</span>
-              <div>
-                <img src="../../../../../assets/images/iot/moudelImg/miner.png">
+          <a-popover placement="right" >
+            <span class='text'> я́ркий блик на анга́рской волне́, </span>
+            <template #content>
+              <div style='width: 450px;font-size: 20px;font-family: Times New Roman'>
+                <div>
+                  <img style="width:450px;height: 280px;" src="../../../../../assets/aiImages/fourth.png">
+                </div>
               </div>
             </template>
-            <span class='text'>Моско́вский </span>
-          </a-tooltip>
-          
+          </a-popover>
         </div>
-        <div class='text'><ruby>雕虫小技<rt>diāochóngxiǎojì</rt></ruby></div>
+        <div>
+          <span>векова́я </span>
+          <a-popover placement="left" >
+            <span class='text'> резьба́ </span>
+            <template #content style="margin-right:50% ;">
+              <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
+                <div>
+                  <img style="width:500px;height: 300px;" src="../../../../../assets/aiImages/fifth.png">
+                </div>
+              </div>
+            </template>
+          </a-popover>
+          <span> над око́нцем –</span>
+        </div>
+        <div>
+          всё, как бы́ло когда́-то, при мне.
+        </div>
+
+<!-- 第八段 -->
+<br/>
+        <div>
+          Знать, не стра́шно сокры́ться в приро́де,
+        </div>
+        <div>
+          ко́ли жил, и томя́сь, и любя́.
+        </div>
+        <div>
+          Ведь с ухо́дом твои́м не ухо́дит
+        </div>
+        <div>
+          то, что в жи́зни превы́ше тебя́.
+        </div>
+        <br/><br/>
       </div>
       <!--    弹窗-->
       <modelTemplate
@@ -269,9 +407,10 @@ export default {
   .text{
     //color: black;
   }
+  // 绿色加粗聚焦
   .text:hover{
     color: #1C9FA3;
-    font-size: 50px;
+    font-size: 25px;
   }
   .table-wrapper{
     padding: 0 30px;
