@@ -13,7 +13,7 @@
               <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
                 <div style=" text-align: justify;">
                   <a-descriptions title="User Info">
-                    <a-descriptions-item label="UserName" >Иоффе Сергей Айзикович (1935, г. Смоленск - 1992, г. Иркутск) - поэт, прозаик. Детство С.А. Иоффе прошло в посёлках довоенного БАМа (Байкало-Амурская магистраль), строителем которого был его отец. Школу и педагогический институт окончил в Иркутске. Он работал на студии телевидения, в газете «Советская молодежь», на студии кинохроники, преподавал в университете. С ранних лет печатался в иркутских газетах и журналах. Автор поэтических сборников, эссе о русских поэтах. В последние годы жизни С.А. Иоффе работал в жанре прозы (повести «Был человек», «Северные поезда», «Любит, не любит...».</a-descriptions-item>
+                    <a-descriptions-item label="UserName" >Иоффе Сергей Айзикович (1935, г. Смоленск - 1992, г. Иркутск) - поэт, прозаик. Детство С.А. Иоффе прошло в посёлках довоенного БАМа (Байкало-Амурская магистраль), строителем которого был его отец. Школу и педагогический институт окончил в Иркутске. Он работал на студии телевидения, в газете «Советская молодежь», на студии кинохроники, преподавал в университете. С ранних лет печатался в иркутских газетах и журналах. Автор поэтических сборников, эссе о русских поэтах. В последние годы жизни С.А. Иоффе работал в жанре прозы.</a-descriptions-item>
                   </a-descriptions>
                 </div>
               </div>
@@ -30,7 +30,7 @@
         <div>
           <a-popover placement="rightTop" >
           <a-tooltip color="green" placement="topLeft">
-            <span class='text'>С нестаре́ющей це́рковью ря́дом<br/>пробега́ют трамва́и,звеня́. </span>
+            <span class='text'>С нестаре́ющей це́рковью ря́дом<br/>пробега́ют трамва́и, звеня́. </span>
           </a-tooltip>
             <template #title>
               <video controls="controls" src="../../../../../assets/aiImages/first.mp4" style="width:99%;height:266px;" ></video>
@@ -66,17 +66,33 @@
           Поверну́-ка незри́мо у ры́нка,
         </div>
         <div>
-          отдохну́ на подъёме круто́м.
+          отдохну́ на 
+          <a-popover placement="right" >
+            <span class='text'> подъёме круто́м. </span>
+            <template #content>
+              <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
+                <div>
+                  <img style="width:500px;height: 300px;" src="../../../../../assets/aiImages/third2end.png">
+                </div>
+              </div>
+            </template>
+          </a-popover>
         </div>
         <div>Пре́жде зва́ли –
           <a-popover placement="right" >
             <span class='text'> Иерусалимка,</span>
+            <template #title>
+              <div style="display: flex;">
+                <img style="width:300px;height: 175px;" src="../../../../../assets/aiImages/second2.jpg">
+                <img style="width:300px;height: 175px;" src="../../../../../assets/aiImages/second.png">
+              </div>
+            </template>
             <template #content>
-              <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
+              <div style='width: 600px;font-size: 20px;font-family: Times New Roman'>
                 <div style=" text-align: justify;">
                   <a-descriptions title="User Info">
                     <a-descriptions-item label="UserName" >
-                      Иерусалимка – холм, расположенный в самом центре Иркутска. На холме возвышается Входо-Иерусалимская церковь (Храм Входа Господня в Иерусалим). С 1772 года здесь располагалось одно из старейших и наиболее крупных кладбищ Иркутска – Иерусалимское кладбище, которое В 1932 году 7 апреля властями Иркутска было принято решение о закрытии кладбища и переоборудовании его под парк культуры и отдыха. Сейчас это место представляет собой историко-мемориальный комплекс «Иерусалимская гора».
+                      Иерусалимка – холм, расположенный в самом центре Иркутска. На холме возвышается Входо-Иерусалимская церковь (Храм Входа Господня в Иерусалим). С 1772 года здесь располагалось одно из старейших и наиболее крупных кладбищ Иркутска – Иерусалимское кладбище. В 1932 году властями Иркутска было принято решение о закрытии кладбища и переоборудовании его под парк культуры и отдыха. Сейчас это место представляет собой историко-мемориальный комплекс «Иерусалимская гора».
                     </a-descriptions-item>
                   </a-descriptions>
                 </div>
@@ -90,8 +106,9 @@
             <span class='text'> Парк культу́ры </span>
             <template #content>
               <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
-                <div>
-                  <img style="width:500px;height: 300px;" src="../../../../../assets/aiImages/second.png">
+                <div style="display: flex;">
+                  <img style="width:200px;height: 250px;" src="../../../../../assets/aiImages/third41.jpg">
+                  <img style="width:300px;height: 250px;" src="../../../../../assets/aiImages/third42.png">
                 </div>
               </div>
             </template>
@@ -101,8 +118,17 @@
 <!-- 第四段 -->
 <br/>
         <div>
-          Нет в окру́ге удо́бнее го́рок:
-          
+          Нет в окру́ге удо́бнее 
+          <a-popover placement="right" >
+            <span class='text'> го́рок: </span>
+            <template #content>
+              <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
+                <div>
+                  <img style="width:500px;height: 300px;" src="../../../../../assets/aiImages/fourth1end.jpg">
+                </div>
+              </div>
+            </template>
+          </a-popover>
         </div>
         <div>
           безмяте́жность, просто́р, высота́.
@@ -120,7 +146,7 @@
           Предуга́дываю переме́ны:
         </div>
         <div>
-          подросли́ де́рева и дома́,
+          подросли́ дерева́ и дома́,
         </div>
         <div>
           но душа́, сердцеви́на – нетле́нны,
@@ -165,7 +191,7 @@
 <br/>
         <div>
           <a-popover placement="left" >
-            <span class='text'> купола́, предзака́тное со́лнце, </span>
+            <span class='text'>купола́</span>,
             <template #content>
               <div style='width: 500px;font-size: 20px;font-family: Times New Roman'>
                 <div>
@@ -174,6 +200,9 @@
               </div>
             </template>
           </a-popover>
+          <span>
+            предзака́тное со́лнце,
+          </span>
         </div>
         <div>
           <a-popover placement="right" >
